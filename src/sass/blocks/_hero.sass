@@ -1,0 +1,67 @@
+.hero
+    padding: 65px 0
+    background-color: $font-color
+    &-block
+        display: flex
+    &-text
+        flex-basis: 42%
+        padding-right: 130px
+        &__title
+            font-size: 37px
+            font-weight: 800
+            line-height: 55px
+            margin-bottom: 20px
+        &__subtitle
+        display: inline-block
+        font-size: 20px
+        font-weight: 600
+        line-height: 75px
+        margin-bottom: 20px
+    &-list
+        list-style-type: none
+        margin: 45px 50px 0 0
+        padding: 0
+        &__item 
+            display: flex
+            align-items: center
+            margin-bottom: 25px          
+        &__image
+            width: 15px
+            height: 15px
+            border: 2px solid $main-color
+            display: flex
+            padding: 9px
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+            margin-right: 30px
+        &__text
+            min-width: 300px
+            font-size: 14px
+            font-weight: 400
+            line-height: 24px
+@media ( max-width: 1200px )
+    .hero
+        &-block
+            flex-direction: column
+        &-list
+            margin-bottom: 40px
+        &-text
+            padding-right: 10px
+@media ( max-width: 768px )
+    .hero
+        &__title
+            font-size: 24px
+            line-height: 1.4
+            margin-bottom: 15px
+        &__subtitle
+            font-size: 16px
+            margin-bottom: 28px
+    &-list 
+        &__itemg
+            margin-bottom: 20px
+        &__text
+            font-size: 12px
+        &__image
+            margin-right: 15px            
+            
